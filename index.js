@@ -29,4 +29,27 @@ let z = true;
 
 if (x == 5 && (y !== "elephant" || z == false)) {
     console.log("all are true!");
-} 
+}
+
+// FIZZBUZZ with if else statement example
+let myNumber = 15;
+let fizz = 3;
+let buzz = 5;
+
+let divisibleByThree = myNumber % fizz == 0;
+let divisibleByFive = myNumber % buzz == 0;
+let divisibleByBoth = myNumber % fizz == 0 && myNumber % buzz == 0;
+
+if (divisibleByBoth) {
+    console.log("My number is: " + myNumber);
+    console.log("FizzBuzz!");
+} else if (divisibleByFive) {
+    console.log("My number is: " + myNumber);
+    console.log("Buzz!");
+} else if (divisibleByThree) {
+    console.log("My number is: " + myNumber);
+    console.log("Fizz!");
+} else {
+    console.log("My number is: " + myNumber);
+    console.log("No Fizz or Buzz!");
+}
